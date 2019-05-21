@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="bootstrap-4.1.2-dist/css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="ButtonStylesInspiration/css/buttons.css" type="text/css"/>
+       <title>PeerConnect</title>
+    
+   </head>
+   
+<body background="2.jpg";>
+<script>
+    function retrieveAnswer() {
+        var text = document.getElementById("answer").value;
+        var realtext = document.getElementById("realtext");
+        //var answer = document.getElementById("final");
+        realtext.appendChild(document.createTextNode("Answer: "));
+        realtext.appendChild(document.createTextNode(text));
+        var elem = document.getElementById('hide');
+        elem.parentNode.removeChild(elem);
+        
+    }
+    function myFunction() {
+        // Get the DOM reference
+  var contentId = document.getElementById("content");
+  // Toggle 
+  contentId.style.display == "block" ? contentId.style.display = "none" : 
+contentId.style.display = "block"; 
+    }
+    
+  
+</script>   
+
+
+<h3 style="color:white">PeerConnect</h3>
+ <div id="map"></div>
+ 
+<!--Profile -->
+
+
+
+<!---Search--->
+
+<div class = "nav-item text-center ">
+<div class="button button--wayra ">
+Select Your School 
+<select>
+    <option><em>School</option>
+    <option>Dublin High School</option>
+
+</select>
+
+<br>
+<br>
+Select Your Course
+<select>
+    <option>Course</option>
+    <option>Algebra 1</option>
+    <option>AP Chemistry</option>
+    <option>Algebra II w/ Trig</option>
+
+</select>
+<br>
+<br>
+<button class="button button--ujarak text-center" type="button" id="search" onclick = "myFunction()"> 
+GO
+</button>
+</div>
+<div  class="button button--wayra ">
+PROFILE
+<br> 
+<div  class="border border-size:20px" style="color:white">
+    <h4>Tejvir Virk</h4>
+    <h5>Class:2019</h5>
+    <h5>Expert: Algebra</h5>
+    <h5>PeerPoints: 3000</h5>
+    <img src="th.jpg" width="110px" height="110px">
+    
+</div>
+
+</div>
+
+<div  class="button button--wayra ">
+PROFILE
+<br> 
+<div  class="border border-size:20px" style="color:white">
+    <h4>Tejvir Virk</h4>
+    <h5>Class:2019</h5>
+    <h5>Expert: Algebra</h5>
+    <h5>PeerPoints: 3000</h5>
+    <img src="th.jpg" width="110px" height="110px">
+    
+</div>
+
+</div>
+
+</div>
+
+
+<!--QuestionsAnswer-->
+
+<div  class="float-right col-9 " id="content" style="display:none" >
+<div  class="col-12 card">
+    <p align="right" class="float-right"><strong>Posted by TJ Virk</strong></p>
+    <strong>If 8 apples cost $6, how many apples can you get for $10? In this case, if the cost is changed to $20 then how many apples can you get with $50?</strong>
+    <form  id="hide">
+        <input class="float-left" id="answer" size="100" type="text" name="textbox" value="Answer here">
+        <button class="float-right button button--ujarak" type="button" id="input" onclick = "retrieveAnswer()"> 
+        Answer
+        </button>
+
+    </form>
+<br>
+<div id = "final">
+    <p id="realtext"></p>
+</div> 
+
+</div>
+<!--BREAK-->
+<div  class="col-12 card">
+    <p align="right" class="float-right"><strong>Posted by Kaushal Ramalingam</strong></p>
+    <strong>How do you graph 2x+3y=5? Transform this equation into a linear equation, then state what the slope tells you.</strong>
+    <form id="hide">
+        <input class="float-left" id="answer" size="100" type="text" name="textbox" value="Answer here">
+        <button class="float-right button button--ujarak" type="button" id="input" onclick = "retrieveAnswer()"> 
+        Answer
+        </button>
+
+    </form>
+<br>
+<div id="final">
+    <p id="realtext"></p>
+</div> 
+
+</div>
+<!--BREAK-->
+<div  class="col-12 card">
+    <p align="right" class="float-right"><strong>Posted by Edward Tang</strong></p>
+    <strong>What is an independent variable? Define and give an example of how an independent variable and dependent are connected. </strong>
+    <form id="hide">
+        <input class="float-left" id="answer" size="100" type="text" name="textbox" value="Answer here">
+        <button class="float-right button button--ujarak" type="button" id="input" onclick = "retrieveAnswer()"> 
+        Answer
+        </button>
+
+    </form>
+<br>
+<div id="final">
+    <p id="realtext"></p>
+</div> 
+
+</div>
+<!--BREAK-->
+<div  class="col-12 card">
+    <p align="right" class="float-right"><strong>Posted by TJ Virk</strong></p>
+    <strong>What numbers do you multiply or add when you are multiplying exponents together?</strong>
+    <form id="hide">
+        <input class="float-left" id="answer" size="100" type="text" name="textbox" value="Answer here">
+        <button class="float-right button button--ujarak" type="button" id="input" onclick = "retrieveAnswer()"> 
+        Answer
+        </button>
+
+    </form>
+<br>
+<div id="final">
+    <p id="realtext"></p>
+</div> 
+
+</div>
+<!--BREAK-->
+<div  class="col-12 card">
+    <p align="right" class="float-right"><strong>Posted by Kaushal Ramalingam</strong></p>
+    <strong>Create a graph with two equations that intersect. State the equations and the intercept point.</strong>
+    <form id="hide">
+        <input class="float-left" id="answer" size="100" type="text" name="textbox" value="Answer here">
+        <button class="float-right button button--ujarak" type="button" id="input" onclick = "retrieveAnswer()"> 
+        Answer
+        </button>
+
+    </form>
+<br>
+<div id="final">
+    <p id="realtext"></p>
+</div> 
+
+</div>
+<!--BREAK-->
+
+</div>
+
+
+
+<!--QuestionsAnswer-->
+
+</body>
+
+</html>
